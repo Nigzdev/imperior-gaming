@@ -31,26 +31,26 @@ const consoles = [
 
 const PricingCards = () => {
   return (
-    <section id="pricing" className="py-24 relative">
+    <section id="pricing" className="py-16 md:py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
       
       <div className="container relative z-10 px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 px-4 py-1 border-primary/50 text-primary">
+        <div className="text-center mb-10 md:mb-16">
+          <Badge variant="outline" className="mb-3 md:mb-4 px-3 md:px-4 py-1 border-primary/50 text-primary text-xs md:text-sm">
             Pricing
           </Badge>
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4">
             <span className="text-gradient">Choose Your</span>{" "}
             <span className="text-foreground">Console</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto px-4">
             Affordable hourly rates for the ultimate gaming experience
           </p>
         </div>
         
         {/* Pricing Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 max-w-5xl mx-auto">
           {consoles.map((console, index) => (
             <Card 
               key={console.name}
