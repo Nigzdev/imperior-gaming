@@ -4,34 +4,34 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="py-12 border-t border-border/50 bg-muted/30">
+    <footer className="py-8 md:py-12 border-t border-border/50 bg-muted/30">
       <div className="container px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-3">
             <div className="p-2 rounded-lg bg-primary/10 neon-border">
-              <Gamepad2 className="w-6 h-6 text-primary" />
+              <Gamepad2 className="w-5 h-5 md:w-6 md:h-6 text-primary" />
             </div>
-            <span className="font-display text-xl font-bold text-gradient">
+            <span className="font-display text-lg md:text-xl font-bold text-gradient">
               Imperior Gaming
             </span>
           </div>
           
           {/* Navigation */}
-          <nav className="flex flex-wrap justify-center gap-6">
-            <a href="#pricing" className="text-muted-foreground hover:text-primary transition-colors">
+          <nav className="flex flex-wrap justify-center gap-4 md:gap-6">
+            <a href="#pricing" className="text-sm md:text-base text-muted-foreground hover:text-primary transition-colors">
               Pricing
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#about" className="text-sm md:text-base text-muted-foreground hover:text-primary transition-colors">
               About
             </a>
-            <a href="#games" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#games" className="text-sm md:text-base text-muted-foreground hover:text-primary transition-colors">
               Games
             </a>
-            <a href="#gallery" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#gallery" className="text-sm md:text-base text-muted-foreground hover:text-primary transition-colors">
               Gallery
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#contact" className="text-sm md:text-base text-muted-foreground hover:text-primary transition-colors">
               Contact
             </a>
           </nav>
